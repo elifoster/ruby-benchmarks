@@ -1,4 +1,4 @@
-This benchmark compares the two methods, that I am aware of, that can be used to append a value to the end of an array. These methods are:
+This benchmark compares the two methods, that I am aware of, that can be used to push a value to the end of an array. These methods are:
 * Array#push
 * <<
 
