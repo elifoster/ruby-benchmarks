@@ -2,8 +2,6 @@ This benchmark compares the two methods, that I am aware of, that can be used to
 * Array#push
 * <<
 
-These results are not the most exciting, however they might be extreme enough to suggest refactoring code.
-
 ## Result
 ```
        user       system      total       real

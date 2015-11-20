@@ -3,8 +3,6 @@ This benchmark compares the three methods, that I am aware of, that can be used 
 * <<
 * variable = variable + other_variable
 
-`<<` does not create a new variable, while += and the third option do.
-
 ## Result
 ```
              user     system      total        real

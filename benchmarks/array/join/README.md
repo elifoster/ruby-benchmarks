@@ -2,8 +2,6 @@ This benchmark compares the two methods, that I am aware of, that can be used to
 * Array#join
 * Array * string
 
-These results are not the most exciting, however they might be extreme enough to suggest refactoring code.
-
 ## Results
 ```
          user      system      total       real
