@@ -18,15 +18,6 @@ JSON_STRING = <<EOF
 }
 EOF
 
-p 'json'
-p JSON.parse(JSON_STRING)
-p 'yajl'
-p Yajl::Parser.parse(JSON_STRING)
-p 'crack'
-p Crack::JSON.parse(JSON_STRING)
-p 'oj'
-p Oj.load(JSON_STRING)
-
 TIMES = 100_000
 Benchmark.bm do |x|
   x.report('json') do
