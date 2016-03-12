@@ -8,3 +8,11 @@ yajl   1.880000   0.020000   1.900000   (1.933602)
 crack  60.310000  0.280000  60.590000   (61.162146)
 oj     0.870000   0.000000   0.870000   (0.866783)
 ```
+
+### Rust
+Additionally, there are some Rust benchmarks available for this category. The actual number was multiplied by 100,000, due to differences in benchmarking between Ruby and Rust.
+
+```
+rustc_serialize   0.6416 s
+serde_json        0.5935 s
+```
