@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    json_pure (1.8.3)
+    oj (2.14.6)
+    safe_yaml (1.0.4)
+    yajl-ruby (1.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  crack
+  json_pure
+  oj
+  yajl-ruby
+
+BUNDLED WITH
+   1.11.2
