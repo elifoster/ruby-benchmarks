@@ -1,0 +1,8 @@
+[package]
+authors = ["Peter Atashian <retep998@gmail.com>"]
+name = "rust"
+version = "0.1.0"
+
+[dependencies]
+rustc-serialize = "0.3.18"
+serde_json = "0.7.0"
