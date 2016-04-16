@@ -4,7 +4,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     json_pure (1.8.3)
-    oj (2.14.6)
+    oj (2.15.0)
     safe_yaml (1.0.4)
     yajl-ruby (1.2.1)
 
@@ -12,10 +12,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  crack
-  json_pure
-  oj
-  yajl-ruby
+  crack (~> 0.4)
+  json_pure (~> 1.8)
+  oj (~> 2.15)
+  yajl-ruby (~> 1.2)
 
 BUNDLED WITH
    1.11.2
