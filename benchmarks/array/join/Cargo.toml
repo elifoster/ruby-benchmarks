@@ -1,0 +1,4 @@
+[package]
+authors = ["Eli Clemente Gordillo Foster <elifosterwy@gmail.com>"]
+name = "test"
+version = "1.0.0"

@@ -14,3 +14,10 @@ join   0.930000   0.020000   0.950000   (0.948285)
 join   0.990000   0.020000   1.010000   (1.002014)
 * str  0.960000   0.010000   0.970000   (0.975679)
 ```
+
+### Rust
+There is a Rust benchmark available for this category. The actual result was converted to seconds and multiplied by 1,000,000.
+
+```
+test_bench: bench   0.59s
+```
