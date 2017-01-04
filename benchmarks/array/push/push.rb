@@ -1,17 +1,18 @@
 require 'benchmark'
 
-array = []
+push_array = []
+insert_array = []
 
 n = 1_000_000
-Benchmark.bm do |x|
+Benchmark.bmbm do |x|
   x.report('push') do
     n.times do
-      array.push('string')
+      push_array.push('string')
     end
   end
   x.report('<<') do
     n.times do
-      array << 'string'
+      insert_array << 'string'
     end
   end
 end

@@ -1,22 +1,24 @@
 require 'benchmark'
 
-string = 'string'
+pluseq_string = 'string'
+insert_string = 'string'
+eqplus_string = 'string'
 
 n = 100_000
-Benchmark.bm do |x|
+Benchmark.bmbm do |x|
   x.report('+=') do
     n.times do
-      string += ' string'
+      pluseq_string += ' string'
     end
   end
   x.report('<<') do
     n.times do
-      string << ' string'
+      insert_string << ' string'
     end
   end
   x.report('= x +') do
     n.times do
-      string = string + ' string'
+      eqplus_string = eqplus_string + ' string'
     end
   end
 end

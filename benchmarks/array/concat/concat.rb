@@ -1,17 +1,18 @@
 require 'benchmark'
 
-array = []
+concat_array = []
+pluseq_array = []
 
 n = 10000
 Benchmark.bm do |x|
   x.report('concat') do
     n.times do
-      array.concat([1, 2, 3])
+      concat_array.concat([1, 2, 3])
     end
   end
   x.report('+=') do
     n.times do
-      array += [1, 2, 3]
+      pluseq_array += [1, 2, 3]
     end
   end
 end

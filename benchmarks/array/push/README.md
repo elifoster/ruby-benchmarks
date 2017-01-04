@@ -1,10 +1,10 @@
 This benchmark compares the two methods, that I am aware of, that can be used to push a value to the end of an array. These methods are:
 * Array#push
-* <<
+* Array#<<
 
 ## Result
 ```
        user       system      total       real
-push  0.370000   0.040000   0.410000   (0.410941)
-<<    0.230000   0.030000   0.260000   (0.275824)
+push  0.250000   0.060000   0.310000   (0.396639)
+<<    0.220000   0.060000   0.280000   (0.330068)
 ```
