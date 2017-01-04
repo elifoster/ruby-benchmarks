@@ -1,4 +1,5 @@
 require 'benchmark'
+require 'benchmark/ips'
 
 array = [[0, [0, 1, 2]]]
 
@@ -14,4 +15,10 @@ Benchmark.bm do |x|
       array[0][1][2]
     end
   end
+end
+
+Benchmark.ips do |x|
+  x.report('dig') { array.dig(0, 1, 2) }
+  x.report('chain []') { array[0][1][2] }
+  x.compare!
 end

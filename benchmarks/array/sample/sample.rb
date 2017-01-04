@@ -1,4 +1,5 @@
 require 'benchmark'
+require 'benchmark/ips'
 
 array = (1..100).to_a
 
@@ -14,4 +15,10 @@ Benchmark.bm do |x|
       array[rand(array.size)]
     end
   end
+end
+
+Benchmark.ips do |x|
+  x.report('sample') { array.sample }
+  x.report('rand') { array[rand(array.size)] }
+  x.compare!
 end

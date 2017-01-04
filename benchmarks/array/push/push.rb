@@ -1,4 +1,5 @@
 require 'benchmark'
+require 'benchmark/ips'
 
 push_array = []
 insert_array = []
@@ -15,4 +16,13 @@ Benchmark.bmbm do |x|
       insert_array << 'string'
     end
   end
+end
+
+push_array = []
+insert_array = []
+
+Benchmark.ips do |x|
+  x.report('push') { push_array.push('string') }
+  x.report('<<') { insert_array << 'string' }
+  x.compare!
 end

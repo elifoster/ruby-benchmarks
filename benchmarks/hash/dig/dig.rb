@@ -1,4 +1,5 @@
 require 'benchmark'
+require 'benchmark/ips'
 
 hash = { foo: { bar: { baz: 1 }}}
 
@@ -14,4 +15,10 @@ Benchmark.bm do |x|
       hash[:foo][:bar][:baz]
     end
   end
+end
+
+Benchmark.ips do |x|
+  x.report('dig') { hash.dig(:foo, :bar, :baz) }
+  x.report('chain []') { hash[:foo][:bar][:baz] }
+  x.compare!
 end

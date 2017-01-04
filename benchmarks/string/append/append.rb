@@ -1,4 +1,5 @@
 require 'benchmark'
+require 'benchmark/ips'
 
 pluseq_string = 'string'
 insert_string = 'string'
@@ -21,4 +22,15 @@ Benchmark.bmbm do |x|
       eqplus_string = eqplus_string + ' string'
     end
   end
+end
+
+pluseq_string = 'string'
+insert_string = 'string'
+eqplus_string = 'string'
+
+Benchmark.ips do |x|
+  x.report('+=') { pluseq_string += ' string' }
+  x.report('<<') { insert_string << ' string' }
+  x.report('= x +') { eqplus_string = eqplus_string + ' string' }
+  x.compare!
 end

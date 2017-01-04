@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    benchmark-ips (2.7.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     json_pure (1.8.3)
@@ -12,10 +13,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  benchmark-ips (~> 2.7)
   crack (~> 0.4)
   json_pure (~> 1.8)
   oj (~> 2.15)
   yajl-ruby (~> 1.2)
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.12.5

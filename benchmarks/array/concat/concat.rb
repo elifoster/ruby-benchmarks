@@ -1,4 +1,5 @@
 require 'benchmark'
+require 'benchmark/ips'
 
 concat_array = []
 pluseq_array = []
@@ -15,4 +16,13 @@ Benchmark.bm do |x|
       pluseq_array += [1, 2, 3]
     end
   end
+end
+
+concat_array = []
+pluseq_array = []
+
+Benchmark.ips do |x|
+  x.report('concat') { concat_array.concat([1, 2, 3]) }
+  x.report('+=') { pluseq_array += [1, 2, 3]}
+  x.compare!
 end
