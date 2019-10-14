@@ -6,17 +6,17 @@ This benchmark compares the two methods, that I am aware of, that can be used to
 ### standard
 ```
          user       system     total        real
-sample  0.010000   0.000000   0.010000   (0.016322)
-rand    0.030000   0.000000   0.030000   (0.027956)
+sample  0.016808   0.000251   0.017059   (0.041600)
+rand    0.029192   0.000352   0.029544   (0.030771)
 ```
 
 ### Iterations/second
 ```
 Calculating -------------------------------------
-              sample      2.219M (±46.1%) i/s -      8.954M in   5.006223s
-                rand      1.410M (±47.2%) i/s -      5.977M in   5.017463s
+              sample      7.157M (±12.4%) i/s -     35.110M in   5.006008s
+                rand      3.746M (± 9.2%) i/s -     18.578M in   5.005390s
 
 Comparison:
-              sample:  2219107.7 i/s
-                rand:  1410476.0 i/s - same-ish: difference falls within error
+              sample:  7157028.2 i/s
+                rand:  3746013.2 i/s - 1.91x  slower
 ```

@@ -5,18 +5,18 @@ This benchmark compares the two methods, that I am aware of, that can be used to
 ## Result
 ### Standard
 ```
-       user       system      total       real
-push  0.250000   0.060000   0.310000   (0.396639)
-<<    0.220000   0.060000   0.280000   (0.330068)
+       user       system      total        real
+push  0.173685   0.047013   0.220698   (0.278741)
+<<    0.144475   0.049456   0.193931   (0.229366)
 ```
 
 ### Iterations/second
 ```
 Calculating -------------------------------------
-                push      1.397M (±47.8%) i/s -      5.135M in   7.732620s
-                  <<      1.686M (±34.4%) i/s -      6.553M in   5.004695s
+                push      3.088M (±25.8%) i/s -      9.159M in   6.214809s
+                  <<      3.352M (±16.7%) i/s -     13.450M in   5.013493s
 
 Comparison:
-                  <<:  1685591.1 i/s
-                push:  1397209.1 i/s - same-ish: difference falls within error
+                  <<:  3352432.6 i/s
+                push:  3088452.9 i/s - same-ish: difference falls within error
 ```
