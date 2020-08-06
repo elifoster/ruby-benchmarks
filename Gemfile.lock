@@ -5,7 +5,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     json_pure (2.2.0)
-    oj (3.10.6)
+    oj (3.10.8)
     safe_yaml (1.0.5)
     yajl-ruby (1.4.1)
 
