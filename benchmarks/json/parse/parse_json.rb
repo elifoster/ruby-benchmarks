@@ -2,7 +2,7 @@ require 'benchmark'
 
 require 'json'
 require 'yajl'
-require 'crack/json'
+require 'crack'
 require 'oj'
 
 JSON_STRING = <<EOF

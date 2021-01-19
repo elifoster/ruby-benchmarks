@@ -4,18 +4,17 @@ This benchmark compares Array#dig vs chained Array#[] calls.
 ### Standard
 ```
             user     system      total       real
-dig       0.125686   0.000451   0.126137   (0.127236)
-chain []  0.083207   0.000948   0.084155   (0.087095)
+dig       0.126903   0.000566   0.127469   (0.127996)
+chain []  0.076311   0.000562   0.076873   (0.077308)
 ```
 
 ### Iterations/second
 ```
-Calculating -------------------------------------
-                 dig      7.182M (± 9.8%) i/s -     35.572M in   5.001499s
-            chain []     10.620M (±11.4%) i/s -     52.490M in   5.009727s
+                 dig      8.083M (± 5.0%) i/s -     40.870M in   5.069312s
+            chain []     12.615M (± 6.6%) i/s -     63.806M in   5.083470s
 
 Comparison:
-            chain []: 10619697.3 i/s
-                 dig:  7182221.1 i/s - 1.48x  slower
+            chain []: 12615360.0 i/s
+                 dig:  8083474.5 i/s - 1.56x  slower
 
 ```

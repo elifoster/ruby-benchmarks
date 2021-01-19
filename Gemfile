@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.6'
+ruby '~> 3.0'
 
 gem('yajl-ruby', '~> 1.4')
 gem('crack', '~> 0.4')
-gem('json_pure', '~> 2.2')
-gem('oj', '~> 3.10')
-gem('benchmark-ips', '~> 2.7')
+gem('json_pure', '~> 2.5')
+gem('oj', '~> 3.11')
+gem('benchmark-ips', '~> 2.8')

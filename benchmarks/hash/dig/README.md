@@ -4,17 +4,16 @@ This benchmark compares Hash#dig vs chained Hash#[] calls.
 ### Standard
 ```
             user      system      total       real
-dig       0.166017   0.000506   0.166523   (0.167532)
-chain []  0.144128   0.000386   0.144514   (0.145114)
+dig       0.150299   0.001946   0.152245   (0.154991)
+chain []  0.126142   0.001636   0.127780   (0.132327)
 ```
 
 ### Iterations/second
 ```
-Calculating -------------------------------------
-                 dig      4.787M (±20.5%) i/s -     22.754M in   5.076289s
-            chain []      5.895M (±16.5%) i/s -     28.545M in   5.025262s
+                 dig      6.372M (± 4.2%) i/s -     31.876M in   5.011800s
+            chain []      7.459M (± 3.6%) i/s -     37.691M in   5.059647s
 
 Comparison:
-            chain []:  5895403.8 i/s
-                 dig:  4786763.2 i/s - same-ish: difference falls within error
+            chain []:  7459296.6 i/s
+                 dig:  6372033.6 i/s - 1.17x  (± 0.00) slower
 ```

@@ -4,9 +4,9 @@ This benchmark compares the two methods, that I am aware of, that can be used to
 
 ## Results
 ```
-         user     system      total        real
-join   0.867982    0.004068   0.872050    (0.874671)
-* str  0.865263   0.002420   0.867683   (0.870819)
+         user        system     total        real
+join   0.490542    0.002538   0.493080    (0.498274)
+* str  0.499274    0.003467   0.502741    (0.506515)
 ```
 
 ### Rust
