@@ -6,7 +6,7 @@ GEM
       rexml
     json_pure (2.5.1)
     oj (3.13.2)
-    rexml (3.2.5)
+    rexml (3.3.9)
     yajl-ruby (1.4.1)
 
 PLATFORMS
